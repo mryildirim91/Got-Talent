@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="75986bfe-cc4d-4cb9-ab68-a8df6c4fc3fa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animator/Contestant.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Contestant.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animator/NP Jury 1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/NP Jury 1.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animator/NP Jury 2.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/NP Jury 2.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animator/Player Jury.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Player Jury.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Materials/Audience 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Materials/Audience 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Materials/Audience 2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Materials/Audience 2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Materials/Audience 3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Materials/Audience 3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Materials/Audience 4.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Materials/Audience 4.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Materials/Audience 5.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Materials/Audience 5.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Materials/Audience 6.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Materials/Audience 6.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Materials/Stage.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Materials/Stage.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Models/Contestants/Boxer Woman.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Models/Contestants/Boxer Woman.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Models/Contestants/Break Dancer Man.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Models/Contestants/Break Dancer Man.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Models/Contestants/Clown.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Models/Contestants/Clown.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Models/Contestants/Cyclist.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Models/Contestants/Cyclist.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Models/Contestants/Donald Trump.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Models/Contestants/Donald Trump.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Models/Contestants/Joe Biden.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Models/Contestants/Joe Biden.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Models/Contestants/Ninja.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Models/Contestants/Ninja.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Models/Contestants/Pirate.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Models/Contestants/Pirate.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Models/Contestants/Singer Woman.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Models/Contestants/Singer Woman.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/1 Break Dancer Man.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/1 Break Dancer Man.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/My Scripts/Contestants.cs" />
+    </changedPaths>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
