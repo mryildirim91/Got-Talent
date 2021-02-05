@@ -906,7 +906,7 @@ GameObject:
   - component: {fileID: 5739550581301347465}
   - component: {fileID: 7150983464593594195}
   m_Layer: 0
-  m_Name: 1 Break Dancer Man
+  m_Name: Break Dancer Man
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
