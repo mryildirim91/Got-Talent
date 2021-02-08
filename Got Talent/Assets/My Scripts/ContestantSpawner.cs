@@ -3,7 +3,7 @@ public class ContestantSpawner : MonoBehaviour
 {
     [SerializeField] private Transform _spawnPos;
     [SerializeField] private GameObject[] _contestants;
-    private void Awake()
+    private void Start()
     {
         SpawnContestant();
     }

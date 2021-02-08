@@ -906,7 +906,8 @@ GameObject:
   - component: {fileID: 5739550581301347465}
   - component: {fileID: 7150983464593594195}
   - component: {fileID: -7873594720469797967}
-  - component: {fileID: -6249501592684620189}
+  - component: {fileID: 4605631947093391310}
+  - component: {fileID: 8832458303764691538}
   m_Layer: 0
   m_Name: 1 Break Dancer Man
   m_TagString: Untagged
@@ -961,8 +962,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6db368e21b69464c92f4473145bbff8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _destination: {x: 0.95, y: 2.75, z: 35.29817}
---- !u!195 &-6249501592684620189
+--- !u!114 &4605631947093391310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4966672644891663923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25a782b9b0cd86740ab8cf96b189b797, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animation: Capoeira
+--- !u!195 &8832458303764691538
 NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

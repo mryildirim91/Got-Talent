@@ -5,18 +5,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animator/Contestant.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Contestant.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/1 Break Dancer Man.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/1 Break Dancer Man.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/2 Boxer Woman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/2 Boxer Woman.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/3 Clown.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/3 Clown.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/4 Cyclist.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/4 Cyclist.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/5 Ninja.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/5 Ninja.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/6 Donald Trump.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/6 Donald Trump.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/7 Pirate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/7 Pirate.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/8 Singer Woman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/8 Singer Woman.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/9 Joe Biden.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/9 Joe Biden.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Contestants.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Contestants.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Contestant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/Contestant.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/ContestantSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/ContestantSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +22,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/My Scripts/Contestant.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/ContestantAnimation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/EventManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/EndState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/My Scripts/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -35,7 +32,11 @@
       <option value="$PROJECT_DIR$/Assets/My Scripts/ObjectPool.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/Contestants.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/ContestantSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/StartState.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/EndState.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/ContestantAnimation.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/EventManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1o6WP08XJVvDRcgtwT41TQP4gHc" />
@@ -81,6 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612607497083</updated>
       <workItem from="1612607503922" duration="9501000" />
+      <workItem from="1612768423764" duration="14394000" />
     </task>
     <servers />
   </component>
