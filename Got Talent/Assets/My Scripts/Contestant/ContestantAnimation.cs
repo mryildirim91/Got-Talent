@@ -1,7 +1,8 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 
-public class ContestantAnimation : MonoBehaviour
+public class ContestantAnimation : MonoBehaviour, IContestantBeingVoted
 {
     private Animator _animator;
     [SerializeField] private string _animation;
@@ -16,6 +17,7 @@ public class ContestantAnimation : MonoBehaviour
         EventManager.OnReachDestination.AddListener(IdleAnimation);
         EventManager.OnPerformanceStart.AddListener(PerformanceAnimation);
         EventManager.OnPerformanceEnd.AddListener(WalkAnimation);
+        EventManager.OnVotingEnd.AddListener(WalkAnimation);
     }
 
     private void OnDisable()
@@ -23,6 +25,7 @@ public class ContestantAnimation : MonoBehaviour
         EventManager.OnReachDestination.RemoveListener(IdleAnimation);
         EventManager.OnPerformanceStart.RemoveListener(PerformanceAnimation);
         EventManager.OnPerformanceEnd.RemoveListener(WalkAnimation);
+        EventManager.OnVotingEnd.RemoveListener(WalkAnimation);
     }
     private void IdleAnimation()
     {
@@ -39,13 +42,25 @@ public class ContestantAnimation : MonoBehaviour
         _animator.SetTrigger(_animation);
     }
 
-    private void GotYesAnimation()
+    private IEnumerator VoteAnimationDelay(int num)
     {
-        _animator.SetTrigger("Got Yes");
-    }
+        yield return BetterWaitForSeconds.Wait(1);
+        
+        if (num == 1)
+        {
+            _animator.SetTrigger("Got Yes");
+        }
 
-    private void GotNoAnimation()
+        if (num == 0)
+        {
+            _animator.SetTrigger("Got No");
+        }
+        
+        StopCoroutine(VoteAnimationDelay(num));
+    }
+    
+    public void VoteAnimation(int num)
     {
-        _animator.SetTrigger("Got No");
+        StartCoroutine(VoteAnimationDelay(num));
     }
 }

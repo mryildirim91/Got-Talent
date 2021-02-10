@@ -8,14 +8,24 @@
       <e p="Assets" t="Include">
         <e p="My Scripts" t="Include">
           <e p="BetterWaitForSeconds.cs" t="Include" />
-          <e p="Contestant.cs" t="Include" />
-          <e p="ContestantAnimation.cs" t="Include" />
-          <e p="ContestantSpawner.cs" t="Include" />
-          <e p="EndState.cs" t="Include" />
+          <e p="CameraController.cs" t="Include" />
+          <e p="Contestant" t="Include">
+            <e p="Contestant.cs" t="Include" />
+            <e p="ContestantAnimation.cs" t="Include" />
+            <e p="ContestantEndState.cs" t="Include" />
+            <e p="ContestantSpawner.cs" t="Include" />
+            <e p="ContestantStartState.cs" t="Include" />
+            <e p="IContestantBeingVoted.cs" t="Include" />
+          </e>
           <e p="EventManager.cs" t="Include" />
+          <e p="Jury" t="Include">
+            <e p="Vote.cs" t="Include" />
+          </e>
           <e p="ObjectPool.cs" t="Include" />
           <e p="SafeArea.cs" t="Include" />
-          <e p="StartState.cs" t="Include" />
+          <e p="UI" t="Include">
+            <e p="Talentmeter.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="Got Talent.sln" t="IncludeFlat" />

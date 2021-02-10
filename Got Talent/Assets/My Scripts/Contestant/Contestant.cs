@@ -3,24 +3,27 @@ using UnityEngine;
 using UnityEngine.AI;
 public class Contestant : MonoBehaviour
 {
+    private bool _hasLeftStage;
     private NavMeshAgent _agent;
     private Vector3 _destination;
+    [SerializeField] private float _talentAngle;
 
-    private void Start()
+    public float TalentAngle => _talentAngle;
+
+    private void OnEnable()
     {
         _agent = GetComponent<NavMeshAgent>();
         _agent.enabled = true;
         SetInitialDestination();
-    }
-
-    private void OnEnable()
-    {
         EventManager.OnPerformanceEnd.AddListener(EndPerformance);
+        EventManager.OnVotingEnd.AddListener(LeaveStage);
     }
 
     private void OnDisable()
     {
+        EventManager.OnPlayerLeftStage.Invoke();
         EventManager.OnPerformanceEnd.RemoveListener(EndPerformance);
+        EventManager.OnVotingEnd.RemoveListener(LeaveStage);
     }
 
     private void Update()
@@ -38,6 +41,11 @@ public class Contestant : MonoBehaviour
     {
         if (Vector3.Distance(transform.position,_destination) < 0.5f && !_agent.isStopped )
         {
+            if (_hasLeftStage)
+            {
+                ObjectPool.Instance.ReturnGameObject(gameObject);
+                return;
+            }
             _agent.isStopped = true;
             EventManager.OnReachDestination.Invoke();
         }
@@ -61,5 +69,13 @@ public class Contestant : MonoBehaviour
         Vector3 direction = Vector3.RotateTowards(transform.forward, targetDirection,singleStep, 0.0f);
         
         return Quaternion.LookRotation(direction);
+    }
+
+    private void LeaveStage()
+    {
+        _hasLeftStage = true;
+        _agent.isStopped = false;
+        _destination = new Vector3(-13, 2.75f, 48);
+        _agent.SetDestination(_destination);
     }
 }
