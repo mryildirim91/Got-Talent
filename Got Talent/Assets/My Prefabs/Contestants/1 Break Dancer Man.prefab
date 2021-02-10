@@ -962,6 +962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6db368e21b69464c92f4473145bbff8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _talentAngle: -90
 --- !u!114 &4605631947093391310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -974,7 +975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25a782b9b0cd86740ab8cf96b189b797, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animation: Capoeira
+  _animation: Break Dance
 --- !u!195 &8832458303764691538
 NavMeshAgent:
   m_ObjectHideFlags: 0

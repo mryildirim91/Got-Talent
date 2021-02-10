@@ -39,7 +39,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: New Trigger
+    m_ConditionEvent: Approve
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8876946944306189516}
@@ -141,7 +141,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: New Trigger 0
+    m_ConditionEvent: Disapprove
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -670822097227879302}
@@ -166,13 +166,13 @@ AnimatorController:
   m_Name: NP Jury 1
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: New Trigger
+  - m_Name: Approve
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: New Trigger 0
+  - m_Name: Disapprove
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0

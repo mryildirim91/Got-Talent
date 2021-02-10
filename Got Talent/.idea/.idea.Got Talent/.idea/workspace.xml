@@ -6,11 +6,31 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animator/Contestant.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Contestant.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animator/NP Jury 1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/NP Jury 1.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animator/NP Jury 2.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/NP Jury 2.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animator/Player Jury.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Player Jury.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/1 Break Dancer Man.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/1 Break Dancer Man.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Contestant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/Contestant.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/ContestantSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/ContestantSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/2 Boxer Woman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/2 Boxer Woman.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/3 Clown.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/3 Clown.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/4 Cyclist.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/4 Cyclist.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/5 Ninja.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/5 Ninja.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/6 Donald Trump.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/6 Donald Trump.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/7 Pirate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/7 Pirate.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/8 Singer Woman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/8 Singer Woman.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/9 Joe Biden.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/9 Joe Biden.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Contestant.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Contestant.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/ContestantAnimation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/ContestantAnimation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/ContestantSpawner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/ContestantSpawner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/EndState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/EndState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/EventManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/EventManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/StartState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/StartState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,11 +41,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/Contestant.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/ContestantAnimation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/UI/Talentmeter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/Contestant/IContestantBeingVoted.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/My Scripts/EventManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/EndState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/Jury/Vote.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/My Scripts/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantStartState.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -36,7 +58,20 @@
       <option value="$PROJECT_DIR$/Assets/My Scripts/EndState.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/ContestantAnimation.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/IContestantTransform.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/EndState.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/StartState.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/Jury/NPJury.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/Jury/PlayerJury.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/Jury/NPJuries.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/IContestantBeingVoted.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantAnimation.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/Jury/Vote.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/EventManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/CameraController.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/Contestant.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/UI/Talentmeter.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1o6WP08XJVvDRcgtwT41TQP4gHc" />
@@ -82,7 +117,9 @@
       <option name="presentableId" value="Default" />
       <updated>1612607497083</updated>
       <workItem from="1612607503922" duration="9501000" />
-      <workItem from="1612768423764" duration="14394000" />
+      <workItem from="1612768423764" duration="18122000" />
+      <workItem from="1612792719012" duration="5838000" />
+      <workItem from="1612853901707" duration="17241000" />
     </task>
     <servers />
   </component>
