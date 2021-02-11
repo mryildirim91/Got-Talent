@@ -1134,9 +1134,10 @@ GameObject:
   - component: {fileID: -3055551440424166711}
   - component: {fileID: -7781681361579392108}
   - component: {fileID: 5814753664990154478}
+  - component: {fileID: -8265761883584173649}
   m_Layer: 0
   m_Name: 6 Donald Trump
-  m_TagString: Untagged
+  m_TagString: Contestant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1224,6 +1225,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animation: Fool Dance
+--- !u!136 &-8265761883584173649
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5278930444385742908}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 2.5, z: 0}
 --- !u!1 &5370241325825954663
 GameObject:
   m_ObjectHideFlags: 0

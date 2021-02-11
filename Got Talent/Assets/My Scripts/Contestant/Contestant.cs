@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
 public class Contestant : MonoBehaviour
 {
@@ -21,7 +20,6 @@ public class Contestant : MonoBehaviour
 
     private void OnDisable()
     {
-        EventManager.OnPlayerLeftStage.Invoke();
         EventManager.OnPerformanceEnd.RemoveListener(EndPerformance);
         EventManager.OnVotingEnd.RemoveListener(LeaveStage);
     }
@@ -58,7 +56,7 @@ public class Contestant : MonoBehaviour
     private void EndPerformance()
     {
         _agent.isStopped = false;
-        _destination = new Vector3(0.95f, 2.75f, 24);
+        _destination = new Vector3(0, 2.75f, 24);
         _agent.SetDestination(_destination);
     }
     

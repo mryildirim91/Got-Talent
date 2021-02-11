@@ -386,9 +386,10 @@ GameObject:
   - component: {fileID: -7675539922749110770}
   - component: {fileID: -4072286259310626882}
   - component: {fileID: -5633292402374477505}
+  - component: {fileID: -7266040900315473621}
   m_Layer: 0
   m_Name: 8 Singer Woman
-  m_TagString: Untagged
+  m_TagString: Contestant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -476,6 +477,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animation: Sing
+--- !u!136 &-7266040900315473621
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908631501829806952}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 2.5, z: 0}
 --- !u!1 &2337603713406137202
 GameObject:
   m_ObjectHideFlags: 0

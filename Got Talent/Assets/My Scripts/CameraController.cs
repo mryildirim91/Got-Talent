@@ -21,18 +21,15 @@ public class CameraController : MonoBehaviour
 
     private void SwitchToPerformanceCam()
     {
-        Contestant contestant = FindObjectOfType<Contestant>();
         _cinemachineVcam[0].Priority = 0;
         _cinemachineVcam[1].Priority = 1;
-        _cinemachineVcam[1].LookAt = contestant.transform;
+        LookAtContestant(1);
     }
 
     private void SwitchToVoteCam()
     {
-        Contestant contestant = FindObjectOfType<Contestant>();
         _cinemachineVcam[1].Priority = 0;
         _cinemachineVcam[2].Priority = 1;
-        _cinemachineVcam[2].LookAt = contestant.transform;
     }
 
     private void StopFollowingContestant()
@@ -44,5 +41,11 @@ public class CameraController : MonoBehaviour
         
         _cinemachineVcam[0].Priority = 1;
         _cinemachineVcam[2].Priority = 0;
+    }
+
+    private void LookAtContestant(int index)
+    {
+        Contestant contestant = FindObjectOfType<Contestant>();
+        _cinemachineVcam[index].LookAt = contestant.transform;
     }
 }

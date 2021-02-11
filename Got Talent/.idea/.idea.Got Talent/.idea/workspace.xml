@@ -5,10 +5,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animator/Contestant.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Contestant.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animator/NP Jury 1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/NP Jury 1.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animator/NP Jury 2.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/NP Jury 2.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animator/Player Jury.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Player Jury.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Materials/Audience 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Materials/Audience 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Materials/Audience 2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Materials/Audience 2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Materials/Audience 3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Materials/Audience 3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Materials/Audience 4.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Materials/Audience 4.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Materials/Audience 5.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Materials/Audience 5.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Materials/Audience 6.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Materials/Audience 6.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Materials/Stage.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Materials/Stage.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/1 Break Dancer Man.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/1 Break Dancer Man.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/2 Boxer Woman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/2 Boxer Woman.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/3 Clown.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/3 Clown.prefab" afterDir="false" />
@@ -18,19 +22,27 @@
       <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/7 Pirate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/7 Pirate.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/8 Singer Woman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/8 Singer Woman.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/9 Joe Biden.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/9 Joe Biden.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Contestant.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Contestant.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/ContestantAnimation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/ContestantAnimation.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/ContestantSpawner.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/ContestantSpawner.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/EndState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/EndState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Contestant/Contestant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/Contestant/Contestant.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantEndState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantEndState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantSpawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/My Scripts/EventManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/EventManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/StartState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/StartState.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Jury/Vote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/Jury/Vote.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/UI/Talentmeter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/UI/Talentmeter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Textures/UI/gösterge.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Textures/UI/gösterge.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Textures/UI/ok.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Textures/UI/ok.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +54,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/My Scripts/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/UI/Talentmeter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/Contestant/IContestantBeingVoted.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/My Scripts/EventManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/UI/UITalentmeter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/Contestant/IContestantBeingVoted.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/Backstage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/My Scripts/Jury/Vote.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/My Scripts/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantStartState.cs" root0="FORCE_HIGHLIGHTING" />
@@ -64,14 +78,20 @@
       <option value="$PROJECT_DIR$/Assets/My Scripts/Jury/NPJury.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/Jury/PlayerJury.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/Jury/NPJuries.cs" />
-      <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/IContestantBeingVoted.cs" />
-      <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantAnimation.cs" />
-      <option value="$PROJECT_DIR$/Assets/My Scripts/Jury/Vote.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/UI/Talentmeter.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/UI/LevelComplete.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantEndState.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/Backstage.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/EventManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/CameraController.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/Contestant.cs" />
-      <option value="$PROJECT_DIR$/Assets/My Scripts/UI/Talentmeter.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantAnimation.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/IContestantBeingVoted.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/UI/UILevelComplete.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/UI/UITalentmeter.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/Jury/Vote.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantSpawner.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1o6WP08XJVvDRcgtwT41TQP4gHc" />
@@ -120,6 +140,8 @@
       <workItem from="1612768423764" duration="18122000" />
       <workItem from="1612792719012" duration="5838000" />
       <workItem from="1612853901707" duration="17241000" />
+      <workItem from="1612942918589" duration="13250000" />
+      <workItem from="1612979062361" duration="4398000" />
     </task>
     <servers />
   </component>
