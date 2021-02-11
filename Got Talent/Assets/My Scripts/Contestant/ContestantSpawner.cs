@@ -8,7 +8,7 @@ public class ContestantSpawner : MonoBehaviour
     [SerializeField] private GameObject[] _contestants;
     private void Start()
     {
-        PlayerPrefs.DeleteAll();
+        //PlayerPrefs.DeleteAll();
         SpawnContestant();
     }
 
@@ -25,14 +25,15 @@ public class ContestantSpawner : MonoBehaviour
     private void SpawnContestant()
     {
         _contestantIndex = PlayerPrefs.GetInt("ContestantIndex");
+        Debug.Log(_contestantIndex);
         _clone = Instantiate(_contestants[_contestantIndex]);
         _clone.transform.position = _spawnPos.position;
-
-        if (_contestantIndex == _contestants.Length - 1)
+        _contestantIndex++;
+        PlayerPrefs.SetInt("ContestantIndex",_contestantIndex);
+        
+        if (_contestantIndex >= _contestants.Length - 1)
         {
             _contestantIndex = 0;
         }
-        _contestantIndex++;
-        PlayerPrefs.SetInt("ContestantIndex",_contestantIndex);
     }
 }

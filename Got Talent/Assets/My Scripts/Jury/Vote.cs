@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class Vote : MonoBehaviour
 {
-    private int _currentJury;
     private int _approval, _disapproval;
+    private int _votingRound = 1;
     private bool _playerCanVote;
     private IContestantBeingVoted _beingVoted;
     private Animator[] _animators;
@@ -30,7 +30,7 @@ public class Vote : MonoBehaviour
 
     private void Update()
     {
-        PlayerVote();
+        //PlayerVote();
     }
     private void BeginVoting()
     {
@@ -49,31 +49,24 @@ public class Vote : MonoBehaviour
         _animators[1].SetTrigger("Disapprove");
         _disapproval++;
         yield return BetterWaitForSeconds.Wait(3);
-        PlayerCanVote();
+        _playerCanVote = true;
         StopCoroutine(nameof(VotingRoutine));
     }
-    private void PlayerCanVote()
-    {
-        EventManager.OnPlayerCanVote.Invoke();
-
-        _playerCanVote = true;
-    }
-
     private void PlayerVote()
     {
         if (_playerCanVote)
         {
-            if (Input.GetKeyDown(KeyCode.Y))
+            if (Input.GetKeyDown(KeyCode.RightArrow))
             {
-                _beingVoted.VoteAnimation(1);
                 _animators[2].SetTrigger("Approve");
+                _beingVoted.VoteAnimation(1);
                 _approval++;
             }
 
-            if (Input.GetKeyDown(KeyCode.N))
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
-                _beingVoted.VoteAnimation(0);
                 _animators[2].SetTrigger("Disapprove");
+                _beingVoted.VoteAnimation(0);
                 _disapproval++;
             }
 
@@ -85,8 +78,33 @@ public class Vote : MonoBehaviour
         }
     }
 
+    public void VoteYes()
+    {
+        _animators[2].SetTrigger("Approve");
+        _beingVoted.VoteAnimation(1);
+        _approval++;
+        _playerCanVote = false;
+        Invoke(nameof(EndVote),2);
+    }
+
+    public void VoteNo()
+    {
+        _animators[2].SetTrigger("Disapprove");
+        _beingVoted.VoteAnimation(0);
+        _disapproval++;
+        _playerCanVote = false;
+        Invoke(nameof(EndVote),2);
+    }
+
     private void EndVote()
     {
+        if (_votingRound == 2)
+        {
+            EventManager.OnLevelComplete.Invoke();
+            return;
+        }
         EventManager.OnVotingEnd.Invoke();
+        
+        _votingRound++;
     }
 }

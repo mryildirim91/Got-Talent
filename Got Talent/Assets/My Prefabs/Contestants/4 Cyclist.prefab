@@ -1105,9 +1105,10 @@ GameObject:
   - component: {fileID: 6157088240152748109}
   - component: {fileID: -331049722693778342}
   - component: {fileID: 797118882748215333}
+  - component: {fileID: -195255563779938351}
   m_Layer: 0
   m_Name: 4 Cyclist
-  m_TagString: Untagged
+  m_TagString: Contestant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1159,6 +1160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6db368e21b69464c92f4473145bbff8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _talentAngle: 0
 --- !u!195 &-331049722693778342
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1194,6 +1196,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animation: 
+--- !u!136 &-195255563779938351
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4889997066930690210}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 2.5, z: 0}
 --- !u!1 &5378025963690757587
 GameObject:
   m_ObjectHideFlags: 0
