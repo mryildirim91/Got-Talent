@@ -50,7 +50,7 @@ public class Contestant : MonoBehaviour
     private void EndPerformance()
     {
         _agent.isStopped = false;
-        _destination = new Vector3(0, 2.75f, 24);
+        _destination = new Vector3(2.6f, 2.75f, 25);
         _agent.SetDestination(_destination);
     }
     
