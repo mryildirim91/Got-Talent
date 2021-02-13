@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class Vote : MonoBehaviour
 {
-    private int _approval, _disapproval;
     private int _votingRound = 1;
     private bool _playerCanVote;
     private IContestantBeingVoted _beingVoted;
     private Animator[] _animators;
     [SerializeField] private GameObject[] _juries;
+    [SerializeField] private Sprite[] _popSprites;
 
     private void Awake()
     {
@@ -27,11 +27,6 @@ public class Vote : MonoBehaviour
     {
         EventManager.OnPerformanceEnd.RemoveListener(BeginVoting);
     }
-
-    private void Update()
-    {
-        //PlayerVote();
-    }
     private void BeginVoting()
     {
         _beingVoted = FindObjectOfType<Contestant>().GetComponent<IContestantBeingVoted>();
@@ -43,61 +38,47 @@ public class Vote : MonoBehaviour
         yield return BetterWaitForSeconds.Wait(3);
         _beingVoted.VoteAnimation(1);
         _animators[0].SetTrigger("Approve");
-        _approval++;
-        yield return BetterWaitForSeconds.Wait(3);
+        _juries[0].transform.GetChild(0).gameObject.SetActive(true);
+        yield return BetterWaitForSeconds.Wait(2);
         _beingVoted.VoteAnimation(0);
         _animators[1].SetTrigger("Disapprove");
-        _disapproval++;
-        yield return BetterWaitForSeconds.Wait(3);
+        _juries[1].transform.GetChild(0).gameObject.SetActive(true);
+        yield return BetterWaitForSeconds.Wait(2);
         _playerCanVote = true;
         StopCoroutine(nameof(VotingRoutine));
     }
-    private void PlayerVote()
+
+    public void PlayerVote(bool aprroved)
     {
         if (_playerCanVote)
         {
-            if (Input.GetKeyDown(KeyCode.RightArrow))
+            _juries[2].transform.GetChild(0).gameObject.SetActive(true);
+            
+            if (aprroved)
             {
+                _juries[2].transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = _popSprites[0];
                 _animators[2].SetTrigger("Approve");
                 _beingVoted.VoteAnimation(1);
-                _approval++;
+                UITop.Instance.GiveStars();
             }
-
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            else
             {
+                _juries[2].transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = _popSprites[1];
                 _animators[2].SetTrigger("Disapprove");
                 _beingVoted.VoteAnimation(0);
-                _disapproval++;
             }
 
-            if (Input.anyKeyDown)
-            {
-                _playerCanVote = false;
-                Invoke(nameof(EndVote),2);
-            }
+            _playerCanVote = false;
+            Invoke(nameof(EndVote),2);
         }
-    }
 
-    public void VoteYes()
-    {
-        _animators[2].SetTrigger("Approve");
-        _beingVoted.VoteAnimation(1);
-        _approval++;
-        _playerCanVote = false;
-        Invoke(nameof(EndVote),2);
     }
-
-    public void VoteNo()
-    {
-        _animators[2].SetTrigger("Disapprove");
-        _beingVoted.VoteAnimation(0);
-        _disapproval++;
-        _playerCanVote = false;
-        Invoke(nameof(EndVote),2);
-    }
-
     private void EndVote()
     {
+        for (int i = 0; i < _juries.Length; i++)
+        {
+            _juries[i].transform.GetChild(0).gameObject.SetActive(false);
+        }
         if (_votingRound == 2)
         {
             EventManager.OnLevelComplete.Invoke();

@@ -1,4 +1,5 @@
-﻿using Cinemachine;
+﻿using System.Diagnostics;
+using Cinemachine;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
@@ -9,14 +10,14 @@ public class CameraController : MonoBehaviour
     {
         EventManager.OnPerformanceStart.AddListener(SwitchToPerformanceCam);
         EventManager.OnPerformanceEnd.AddListener(SwitchToVoteCam);
-        EventManager.OnVotingEnd.AddListener(StopFollowingContestant);
+        EventManager.OnVotingEnd.AddListener(SwitchToFirstCam);
     }
 
     private void OnDisable()
     {
         EventManager.OnPerformanceStart.RemoveListener(SwitchToPerformanceCam);
         EventManager.OnPerformanceEnd.RemoveListener(SwitchToVoteCam);
-        EventManager.OnVotingEnd.RemoveListener(StopFollowingContestant);
+        EventManager.OnVotingEnd.RemoveListener(SwitchToFirstCam);
     }
 
     private void SwitchToPerformanceCam()
@@ -32,11 +33,12 @@ public class CameraController : MonoBehaviour
         _cinemachineVcam[2].Priority = 1;
     }
 
-    private void StopFollowingContestant()
+    private void SwitchToFirstCam()
     {
         for (int i = 0; i < _cinemachineVcam.Length; i++)
         {
-            _cinemachineVcam[i].LookAt = null;
+            if(_cinemachineVcam[i] != null)
+                _cinemachineVcam[i].LookAt = null;
         }
         
         _cinemachineVcam[0].Priority = 1;

@@ -54,19 +54,6 @@
               </e>
             </e>
           </e>
-          <e p="Demos" t="Include">
-            <e p="Common" t="Include">
-              <e p="Scripts" t="Include">
-                <e p="Motion" t="Include">
-                  <e p="CameraMouseOrbit.cs" t="Include" />
-                  <e p="Editor" t="Include">
-                    <e p="LinearMotionEditor.cs" t="Include" />
-                  </e>
-                  <e p="LinearMotion.cs" t="Include" />
-                </e>
-              </e>
-            </e>
-          </e>
           <e p="Scripts" t="Include">
             <e p="UvScroller.cs" t="Include" />
           </e>
@@ -118,6 +105,8 @@
           <e p="UI" t="Include">
             <e p="UILevelComplete.cs" t="Include" />
             <e p="UITalentmeter.cs" t="Include" />
+            <e p="UITop.cs" t="Include" />
+            <e p="UIVote.cs" t="Include" />
           </e>
         </e>
       </e>

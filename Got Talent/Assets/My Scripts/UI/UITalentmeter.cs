@@ -2,10 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using DG.Tweening;
 
 public class UITalentmeter : MonoBehaviour
 {
+    [SerializeField] private Ease easeType;
     [SerializeField] private GameObject _panel;
     [SerializeField] private RectTransform _arrow;
     
@@ -23,7 +24,7 @@ public class UITalentmeter : MonoBehaviour
 
     private void ShowTalentmeter()
     {
-        Invoke(nameof(ShowTalentmeterDelay), 9);
+        StartCoroutine(ShowTalentmeterDelay());
     }
 
     private void HideTalentMeter()
@@ -31,10 +32,18 @@ public class UITalentmeter : MonoBehaviour
         _panel.SetActive(false);
     }
 
-    private void ShowTalentmeterDelay()
+    private IEnumerator ShowTalentmeterDelay()
     {
+        yield return BetterWaitForSeconds.Wait(6);
         Contestant contestant = FindObjectOfType<Contestant>();
         _panel.SetActive(true);
-        _arrow.rotation = Quaternion.Euler(0,0,contestant.TalentAngle);
+        _arrow.rotation = Quaternion.Euler(0,0,0);
+        yield return BetterWaitForSeconds.Wait(0.1f);
+        _arrow.DORotate(Vector3.forward * -180, 0.5f, RotateMode.LocalAxisAdd).SetEase(easeType);
+        yield return BetterWaitForSeconds.Wait(0.6f);
+        _arrow.DORotate(Vector3.forward * 180, 0.5f,RotateMode.LocalAxisAdd).SetEase(easeType);
+        yield return BetterWaitForSeconds.Wait(0.6f);
+        _arrow.DORotate(Vector3.back * contestant.TalentAngle, 0.5f,RotateMode.LocalAxisAdd).SetEase(easeType);
+        StopCoroutine(ShowTalentmeterDelay());
     }
 }
