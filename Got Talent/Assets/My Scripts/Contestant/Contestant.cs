@@ -2,7 +2,6 @@
 using UnityEngine.AI;
 public class Contestant : MonoBehaviour
 {
-    private bool _hasLeftStage;
     private NavMeshAgent _agent;
     private Vector3 _destination;
     [SerializeField] private float _talentAngle;
@@ -37,13 +36,8 @@ public class Contestant : MonoBehaviour
 
     private void ReachDestination()
     {
-        if (Vector3.Distance(transform.position,_destination) < 0.5f && !_agent.isStopped )
+        if (Vector3.Distance(transform.position,_destination) < 1.5f && !_agent.isStopped )
         {
-            if (_hasLeftStage)
-            {
-                ObjectPool.Instance.ReturnGameObject(gameObject);
-                return;
-            }
             _agent.isStopped = true;
             EventManager.OnReachDestination.Invoke();
         }
@@ -71,7 +65,6 @@ public class Contestant : MonoBehaviour
 
     private void LeaveStage()
     {
-        _hasLeftStage = true;
         _agent.isStopped = false;
         _destination = new Vector3(-13, 2.75f, 48);
         _agent.SetDestination(_destination);

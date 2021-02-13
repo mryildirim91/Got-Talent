@@ -44,7 +44,7 @@ public class ContestantAnimation : MonoBehaviour, IContestantBeingVoted
 
     private IEnumerator VoteAnimationDelay(int num)
     {
-        yield return BetterWaitForSeconds.Wait(1);
+        yield return BetterWaitForSeconds.Wait(0.5f);
         
         if (num == 1)
         {
