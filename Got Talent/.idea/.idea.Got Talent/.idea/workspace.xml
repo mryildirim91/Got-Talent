@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75986bfe-cc4d-4cb9-ab68-a8df6c4fc3fa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Materials/Audience 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Materials/Audience 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Materials/Lights.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Materials/Lights.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Materials/New Material.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Materials/New Material.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Materials/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Materials/Stage.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Materials/Stage.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/8 Singer Woman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/8 Singer Woman.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/My Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Contestant/Contestant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/Contestant/Contestant.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Jury/Vote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/Jury/Vote.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/UI/UILevelComplete.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/UI/UILevelComplete.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/UI/UITop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/UI/UITop.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +111,7 @@
       <workItem from="1613030102236" duration="9399000" />
       <workItem from="1613049671117" duration="5857000" />
       <workItem from="1613115886044" duration="6551000" />
-      <workItem from="1613211262503" duration="11978000" />
+      <workItem from="1613211262503" duration="12789000" />
     </task>
     <servers />
   </component>
