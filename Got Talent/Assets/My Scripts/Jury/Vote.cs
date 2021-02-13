@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using DG.Tweening;
 using UnityEngine;
 
 public class Vote : MonoBehaviour
@@ -13,6 +14,7 @@ public class Vote : MonoBehaviour
     private void Awake()
     {
         _animators = new Animator[_juries.Length];
+        
         for (int i = 0; i < _animators.Length; i++)
         {
             _animators[i] = _juries[i].GetComponent<Animator>();
@@ -35,24 +37,50 @@ public class Vote : MonoBehaviour
     
     private IEnumerator VotingRoutine()
     {
+        int juryIndex = 0;
+        int randomNum = Random.Range(-1, 2);
+        
+        if (randomNum == 0)
+        {
+            randomNum = 1;
+        }
+        
         yield return BetterWaitForSeconds.Wait(3);
-        _beingVoted.VoteAnimation(1);
-        _animators[0].SetTrigger("Approve");
-        _juries[0].transform.GetChild(0).gameObject.SetActive(true);
+        JuryVote(randomNum,juryIndex);
+        juryIndex++;
+        randomNum = -randomNum;
         yield return BetterWaitForSeconds.Wait(2);
-        _beingVoted.VoteAnimation(0);
-        _animators[1].SetTrigger("Disapprove");
-        _juries[1].transform.GetChild(0).gameObject.SetActive(true);
+        JuryVote(randomNum,juryIndex);
         yield return BetterWaitForSeconds.Wait(2);
         _playerCanVote = true;
         StopCoroutine(nameof(VotingRoutine));
     }
 
+    private void JuryVote(int randomNum, int juryIndex)
+    {
+        int animIndex = 1;
+        int spriteIndex = 0;
+        string juryAnimation = "Approve";
+        
+        if (randomNum == -1)
+        {
+            juryAnimation = "Disapprove";
+            animIndex = 0;
+            spriteIndex = 1;
+        }
+        
+        _beingVoted.VoteAnimation(animIndex);
+        _animators[juryIndex].SetTrigger(juryAnimation);
+        _juries[juryIndex].transform.GetChild(0).gameObject.SetActive(true);
+        _juries[juryIndex].transform.GetChild(0).DOScale(Vector3.one * 0.3f, 0.1f);
+        _juries[juryIndex].transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = _popSprites[spriteIndex];
+    }
     public void PlayerVote(bool aprroved)
     {
         if (_playerCanVote)
         {
             _juries[2].transform.GetChild(0).gameObject.SetActive(true);
+            _juries[2].transform.GetChild(0).DOScale(Vector3.one * 0.3f, 0.1f);
             
             if (aprroved)
             {
