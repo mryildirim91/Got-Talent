@@ -1,26 +1,16 @@
 ﻿using System.Collections;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Vote : MonoBehaviour
 {
     private int _votingRound = 1;
     private bool _playerCanVote;
     private IContestantBeingVoted _beingVoted;
-    private Animator[] _animators;
-    [SerializeField] private GameObject[] _juries;
-    [SerializeField] private Sprite[] _popSprites;
-
-    private void Awake()
-    {
-        _animators = new Animator[_juries.Length];
-        
-        for (int i = 0; i < _animators.Length; i++)
-        {
-            _animators[i] = _juries[i].GetComponent<Animator>();
-        }
-    }
-
+    [SerializeField] private GameObject[] _arms;
+    [SerializeField] private Image[] _voteImages;
+    [SerializeField] private Sprite _yesSprite, _noSprite;
     private void OnEnable()
     {
         EventManager.OnPerformanceEnd.AddListener(BeginVoting);
@@ -47,67 +37,53 @@ public class Vote : MonoBehaviour
         
         yield return BetterWaitForSeconds.Wait(3);
         JuryVote(randomNum,juryIndex);
-        juryIndex++;
         randomNum = -randomNum;
+        juryIndex++;
         yield return BetterWaitForSeconds.Wait(2);
         JuryVote(randomNum,juryIndex);
         yield return BetterWaitForSeconds.Wait(2);
         _playerCanVote = true;
-        StopCoroutine(nameof(VotingRoutine));
     }
 
     private void JuryVote(int randomNum, int juryIndex)
     {
         int animIndex = 1;
-        int spriteIndex = 0;
-        string juryAnimation = "Approve";
+
+        _voteImages[juryIndex].gameObject.SetActive(true);
         
         if (randomNum == -1)
         {
-            juryAnimation = "Disapprove";
             animIndex = 0;
-            spriteIndex = 1;
+            _voteImages[juryIndex].sprite = _noSprite;
+        }
+        else
+        {
+            _voteImages[juryIndex].sprite = _yesSprite;
         }
         
         _beingVoted.VoteAnimation(animIndex);
-        _animators[juryIndex].SetTrigger(juryAnimation);
-        _juries[juryIndex].transform.GetChild(0).gameObject.SetActive(true);
-        _juries[juryIndex].transform.GetChild(0).DOScale(Vector3.one * 0.3f, 0.1f);
-        _juries[juryIndex].transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = _popSprites[spriteIndex];
-    }
-    public void PlayerVote(bool aprroved)
-    {
-        if (_playerCanVote)
-        {
-            _juries[2].transform.GetChild(0).gameObject.SetActive(true);
-            _juries[2].transform.GetChild(0).DOScale(Vector3.one * 0.3f, 0.1f);
-            
-            if (aprroved)
-            {
-                _juries[2].transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = _popSprites[0];
-                _animators[2].SetTrigger("Approve");
-                _beingVoted.VoteAnimation(1);
-                UITop.Instance.GiveStars();
-            }
-            else
-            {
-                _juries[2].transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = _popSprites[1];
-                _animators[2].SetTrigger("Disapprove");
-                _beingVoted.VoteAnimation(0);
-            }
-
-            _playerCanVote = false;
-            Invoke(nameof(EndVote),2);
-        }
 
     }
     private void EndVote()
     {
-        for (int i = 0; i < _juries.Length; i++)
+        for (int i = 0; i < _voteImages.Length; i++)
         {
-            _juries[i].transform.GetChild(0).gameObject.SetActive(false);
+            _voteImages[i].gameObject.SetActive(false);
         }
-        if (_votingRound == 2)
+
+        for (int i = 0; i < _arms.Length; i++)
+        {
+            if (_arms[i].activeSelf)
+            {
+                var pos = _arms[i].transform.position;
+                pos.y = 4f;
+                _arms[i].transform.position = pos;
+                
+                _arms[i].SetActive(false);
+            }
+        }
+        
+        if (_votingRound == 3)
         {
             EventManager.OnLevelComplete.Invoke();
             return;
@@ -115,5 +91,75 @@ public class Vote : MonoBehaviour
         EventManager.OnVotingEnd.Invoke();
         
         _votingRound++;
+    }
+    
+    private Vector2 _fingerDownPosition;
+    private Vector2 _fingerUpPosition;
+    
+    private bool _detectSwipeOnlyAfterRelease;
+    
+    private float _minDistanceForSwipe = 100;
+    
+    private void Update()
+    {
+        if (!_playerCanVote)
+            return;
+        
+        PlayerVote();
+    }
+
+    private void PlayerVote()
+    {
+        foreach (Touch touch in Input.touches)
+        {
+            if (touch.phase == TouchPhase.Began)
+            {
+                _fingerUpPosition = touch.position;
+                _fingerDownPosition = touch.position;
+            }
+
+            if (!_detectSwipeOnlyAfterRelease && touch.phase == TouchPhase.Moved)
+            {
+                _fingerDownPosition = touch.position;
+                DetectSwipe();
+            }
+
+            if (touch.phase == TouchPhase.Ended)
+            {
+                _fingerDownPosition = touch.position;
+                DetectSwipe();
+            }
+        }
+    }
+
+    private void DetectSwipe()
+    {
+        if (_playerCanVote)
+        {
+            if (Mathf.Abs(_fingerDownPosition.x - _fingerUpPosition.x) > _minDistanceForSwipe)
+            {
+                _voteImages[2].gameObject.SetActive(true);
+            
+                if (_fingerDownPosition.x - _fingerUpPosition.x > 0)
+                {
+                    _arms[0].SetActive(true);
+                    _arms[0].transform.DOMoveY(3.556f, 0.3f);
+                    _voteImages[2].sprite = _yesSprite;
+                    _beingVoted.VoteAnimation(1);
+                    UITop.Instance.GiveStars();
+                }
+                else
+                {
+                    _arms[1].SetActive(true);
+                    _arms[1].transform.DOMoveY(3.556f, 0.3f);
+                    _voteImages[2].sprite = _noSprite;
+                    _beingVoted.VoteAnimation(0);
+                }
+
+                _playerCanVote = false;
+                Invoke(nameof(EndVote),2);
+                _fingerUpPosition = _fingerDownPosition;
+            } 
+        }
     }
 }

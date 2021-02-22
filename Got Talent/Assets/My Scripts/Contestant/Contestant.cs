@@ -2,17 +2,17 @@
 using UnityEngine.AI;
 public class Contestant : MonoBehaviour
 {
+    private bool _initialDestinationSet;
     private NavMeshAgent _agent;
     private Vector3 _destination;
     [SerializeField] private float _talentAngle;
 
     public float TalentAngle => _talentAngle;
-
+    
     private void OnEnable()
     {
         _agent = GetComponent<NavMeshAgent>();
         _agent.enabled = true;
-        SetInitialDestination();
         EventManager.OnPerformanceEnd.AddListener(EndPerformance);
         EventManager.OnVotingEnd.AddListener(LeaveStage);
     }
@@ -25,13 +25,18 @@ public class Contestant : MonoBehaviour
 
     private void Update()
     {
+        SetInitialDestination();
         ReachDestination();
     }
 
     private void SetInitialDestination()
     {
-        _destination = new Vector3(0.95f, 2.75f, 35.3f);
-        _agent.SetDestination(_destination);
+        if (GameManager.Instance.IsGameStarted && !_initialDestinationSet)
+        {
+            _initialDestinationSet = true;
+            _destination = new Vector3(0.95f, 2.75f, 35.3f);
+            _agent.SetDestination(_destination);
+        }
     }
 
     private void ReachDestination()
@@ -50,7 +55,7 @@ public class Contestant : MonoBehaviour
     private void EndPerformance()
     {
         _agent.isStopped = false;
-        _destination = new Vector3(2.6f, 2.75f, 25);
+        _destination = new Vector3(0, 2.75f, 25);
         _agent.SetDestination(_destination);
     }
     
@@ -66,7 +71,7 @@ public class Contestant : MonoBehaviour
     private void LeaveStage()
     {
         _agent.isStopped = false;
-        _destination = new Vector3(-13, 2.75f, 48);
+        _destination = new Vector3(-20, 2.75f, 48);
         _agent.SetDestination(_destination);
     }
 }

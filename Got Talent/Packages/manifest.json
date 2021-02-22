@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.lionstudios.release.lionkit": "1.3.1",
     "com.unity.cinemachine": "2.6.3",
     "com.unity.collab-proxy": "1.2.16",
     "com.unity.device-simulator": "2.2.4-preview",
@@ -41,5 +42,22 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  }
+  },
+  "scopedRegistries": [
+    {
+      "name": "Lion Studios",
+      "url": "http://packages.lionstudios.cc:4873",
+      "scopes": [
+        "com.lionstudios.release",
+        "com.lionstudios.templates"
+      ]
+    },
+    {
+      "name": "Game Package Registry by Google",
+      "url": "https://unityregistry-pa.googleapis.com",
+      "scopes": [
+        "com.google"
+      ]
+    }
+  ]
 }
