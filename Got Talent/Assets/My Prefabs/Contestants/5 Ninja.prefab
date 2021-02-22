@@ -2096,7 +2096,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25a782b9b0cd86740ab8cf96b189b797, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animation: Capoeira
+  _contestantInfo:
+    _name: Oscar Carlos
+    _talent: Capoeira
+    _picture: {fileID: 21300000, guid: afa6ee40f4e30f444b2ba1b08eb9e8a3, type: 3}
 --- !u!136 &7376304204029133377
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2108,7 +2111,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 1
+  m_Height: 6.0327435
   m_Direction: 1
   m_Center: {x: 0, y: 2.5, z: 0}
 --- !u!1 &8561694823186132424

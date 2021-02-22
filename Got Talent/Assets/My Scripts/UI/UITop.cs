@@ -16,7 +16,7 @@ public class UITop : MonoBehaviour
         Instance = this;
         _currentEpisode = PlayerPrefs.GetInt("CurrentEpisode") + 1;
         _episode.text = "Episode " + _currentEpisode;
-        GiveStars();
+        _totalStar.text = PlayerPrefs.GetInt("TotalStars").ToString();
     }
 
     public void GiveStars()

@@ -976,7 +976,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25a782b9b0cd86740ab8cf96b189b797, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animation: Break Dance
+  _contestantInfo:
+    _name: John Black
+    _talent: Break Dance
+    _picture: {fileID: 21300000, guid: c5551485d1a187f40ac14fe55560b5a0, type: 3}
 --- !u!195 &8832458303764691538
 NavMeshAgent:
   m_ObjectHideFlags: 0

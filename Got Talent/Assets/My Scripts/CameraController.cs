@@ -1,5 +1,4 @@
-﻿using System.Diagnostics;
-using Cinemachine;
+﻿using Cinemachine;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
@@ -9,45 +8,43 @@ public class CameraController : MonoBehaviour
     private void OnEnable()
     {
         EventManager.OnPerformanceStart.AddListener(SwitchToPerformanceCam);
-        EventManager.OnPerformanceEnd.AddListener(SwitchToVoteCam);
-        EventManager.OnVotingEnd.AddListener(SwitchToFirstCam);
+        EventManager.OnVotingEnd.AddListener(SwitchToIntermittentCam);
     }
 
     private void OnDisable()
     {
         EventManager.OnPerformanceStart.RemoveListener(SwitchToPerformanceCam);
-        EventManager.OnPerformanceEnd.RemoveListener(SwitchToVoteCam);
-        EventManager.OnVotingEnd.RemoveListener(SwitchToFirstCam);
+        EventManager.OnVotingEnd.RemoveListener(SwitchToIntermittentCam);
     }
-
-    private void SwitchToPerformanceCam()
+    
+    public void SwitchToPerformanceCam()
     {
+        LookAtContestant();
         _cinemachineVcam[0].Priority = 0;
-        _cinemachineVcam[1].Priority = 1;
-        LookAtContestant(1);
-    }
-
-    private void SwitchToVoteCam()
-    {
         _cinemachineVcam[1].Priority = 0;
         _cinemachineVcam[2].Priority = 1;
     }
 
-    private void SwitchToFirstCam()
+    public void SwitchToIntermittentCam()
+    {
+        _cinemachineVcam[0].Priority = 0;
+        _cinemachineVcam[1].Priority = 1;
+        _cinemachineVcam[2].Priority = 0;
+        
+        StopLookingAtContestant();
+    }
+    private void StopLookingAtContestant()
     {
         for (int i = 0; i < _cinemachineVcam.Length; i++)
         {
             if(_cinemachineVcam[i] != null)
                 _cinemachineVcam[i].LookAt = null;
         }
-        
-        _cinemachineVcam[0].Priority = 1;
-        _cinemachineVcam[2].Priority = 0;
     }
 
-    private void LookAtContestant(int index)
+    private void LookAtContestant()
     {
         Contestant contestant = FindObjectOfType<Contestant>();
-        _cinemachineVcam[index].LookAt = contestant.transform;
+        _cinemachineVcam[2].LookAt = contestant.transform;
     }
 }

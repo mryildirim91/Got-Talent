@@ -1224,7 +1224,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25a782b9b0cd86740ab8cf96b189b797, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animation: Fool Dance
+  _contestantInfo:
+    _name: Ronald Swamp
+    _talent: Samba
+    _picture: {fileID: 21300000, guid: f93b3165df92dec45b5f3020c7aff81a, type: 3}
 --- !u!136 &-8265761883584173649
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1236,7 +1239,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 1
+  m_Height: 6.0327435
   m_Direction: 1
   m_Center: {x: 0, y: 2.5, z: 0}
 --- !u!1 &5370241325825954663

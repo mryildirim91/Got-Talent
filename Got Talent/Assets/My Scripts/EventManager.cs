@@ -1,6 +1,4 @@
-﻿using Cinemachine;
-using TMPro;
-using UnityEngine.Events;
+﻿using UnityEngine.Events;
 
 public static class EventManager
 {

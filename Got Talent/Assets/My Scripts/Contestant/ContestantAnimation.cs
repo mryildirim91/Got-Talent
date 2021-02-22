@@ -5,13 +5,25 @@ using UnityEngine;
 public class ContestantAnimation : MonoBehaviour, IContestantBeingVoted
 {
     private Animator _animator;
-    [SerializeField] private string _animation;
+
+    public ContestantInfo _contestantInfo;
+    
+    [Serializable]
+    public struct ContestantInfo
+    {
+        [SerializeField]private string _name;
+        [SerializeField]private string _talent;
+        [SerializeField]private Sprite _picture;
+
+        public string Name => _name;
+        public string Talent => _talent;
+        public Sprite Picture => _picture;
+    }
 
     private void Start()
     {
         _animator = GetComponent<Animator>();
     }
-
     private void OnEnable()
     {
         EventManager.OnReachDestination.AddListener(IdleAnimation);
@@ -19,7 +31,6 @@ public class ContestantAnimation : MonoBehaviour, IContestantBeingVoted
         EventManager.OnPerformanceEnd.AddListener(WalkAnimation);
         EventManager.OnVotingEnd.AddListener(WalkAnimation);
     }
-
     private void OnDisable()
     {
         EventManager.OnReachDestination.RemoveListener(IdleAnimation);
@@ -31,20 +42,17 @@ public class ContestantAnimation : MonoBehaviour, IContestantBeingVoted
     {
         _animator.SetTrigger("Idle");
     }
-
     private void WalkAnimation()
     {
         _animator.SetTrigger("Walk");
     }
-
     private void PerformanceAnimation()
     {
-        _animator.SetTrigger(_animation);
+        _animator.SetTrigger(_contestantInfo.Talent);
     }
-
     private IEnumerator VoteAnimationDelay(int num)
     {
-        yield return BetterWaitForSeconds.Wait(0.5f);
+        yield return BetterWaitForSeconds.Wait(0.25f);
         
         if (num == 1)
         {
@@ -58,7 +66,6 @@ public class ContestantAnimation : MonoBehaviour, IContestantBeingVoted
         
         StopCoroutine(VoteAnimationDelay(num));
     }
-    
     public void VoteAnimation(int num)
     {
         StartCoroutine(VoteAnimationDelay(num));

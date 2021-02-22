@@ -7,6 +7,11 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Adjust" t="Include">
+          <e p="Android" t="Include">
+            <e p="AdjustAndroidManifest.xml" t="Include" />
+          </e>
+        </e>
         <e p="DOTween" t="Include">
           <e p="Modules" t="Include">
             <e p="DOTweenModuleAudio.cs" t="Include" />
@@ -83,6 +88,13 @@
             </e>
           </e>
         </e>
+        <e p="LionStudios" t="Include">
+          <e p="GDPR" t="Include">
+            <e p="Resources" t="Include">
+              <e p="GDPR_Strings.txt" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="My Scripts" t="Include">
           <e p="Backstage.cs" t="Include" />
           <e p="BetterWaitForSeconds.cs" t="Include" />
@@ -104,6 +116,7 @@
           <e p="SafeArea.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="UILevelComplete.cs" t="Include" />
+            <e p="UIStart.cs" t="Include" />
             <e p="UITalentmeter.cs" t="Include" />
             <e p="UITop.cs" t="Include" />
             <e p="UIVote.cs" t="Include" />

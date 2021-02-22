@@ -26,17 +26,18 @@ public class UILevelComplete : MonoBehaviour
     {
         _levelCompletePanel.SetActive(true);
         RectTransform rectTransform = _levelCompletePanel.transform.GetChild(0).GetComponent<RectTransform>();
-        rectTransform.DOAnchorPos(new Vector2(0, -1100), 0.5f);
+        rectTransform.DOAnchorPos(new Vector2(0, -1250), 0.5f);
         StartCoroutine(LevelEndStarAnimation());
     }
     
     private IEnumerator LevelEndStarAnimation()
     {
-        yield return BetterWaitForSeconds.Wait(0.5f);
-        
-        _stars[0].SetActive(true);
-        _stars[0].transform.DOScale(Vector3.one, 0.1f);
-
+        if (UITop.Instance.NumOfStars > 0)
+        {
+            yield return BetterWaitForSeconds.Wait(0.4f);
+            _stars[0].SetActive(true);
+            _stars[0].transform.DOScale(Vector3.one, 0.1f);
+        }
         if (UITop.Instance.NumOfStars > 1)
         {
             yield return BetterWaitForSeconds.Wait(0.4f);
@@ -49,7 +50,5 @@ public class UILevelComplete : MonoBehaviour
             _stars[2].SetActive(true);
             _stars[2].transform.DOScale(Vector3.one, 0.1f);
         }
-        
-        StopCoroutine(LevelEndStarAnimation());
     }
 }
