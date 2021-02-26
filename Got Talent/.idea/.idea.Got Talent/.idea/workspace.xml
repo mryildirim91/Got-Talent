@@ -2,27 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75986bfe-cc4d-4cb9-ab68-a8df6c4fc3fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Contestants/Samba/Samba.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Contestants/Samba/Samba.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Contestants/Walking.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Contestants/Walking.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Jury Clapping.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Jury Clapping.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Jury Disapproval.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Jury Disapproval.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animator/Contestant.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Contestant.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animator/Jury.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Jury.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Models/Contestants/Boxer Woman.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Models/Contestants/Boxer Woman.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Models/Contestants/Break Dancer Man.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Models/Contestants/Break Dancer Man.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Models/Contestants/Clown.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Models/Contestants/Clown.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Models/Contestants/Cyclist.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Models/Contestants/Cyclist.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Models/Contestants/Donald Trump.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Models/Contestants/Donald Trump.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Models/Contestants/Joe Biden.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Models/Contestants/Joe Biden.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Models/Contestants/Ninja.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Models/Contestants/Ninja.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Models/Contestants/Pirate.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Models/Contestants/Pirate.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Models/Contestants/Singer Woman.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Models/Contestants/Singer Woman.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/1 Break Dancer Man.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/1 Break Dancer Man.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/10 Baseball Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/10 Baseball Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/11 Doctor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/11 Doctor.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/12 Farmer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/12 Farmer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/13 Fireman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/13 Fireman.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/14 Soldier.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/14 Soldier.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/15 Wizard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/15 Wizard.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/2 Boxer Woman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/2 Boxer Woman.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/3 Clown.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/3 Clown.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/4 Cyclist.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/4 Cyclist.prefab" afterDir="false" />
@@ -31,23 +19,8 @@
       <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/7 Pirate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/7 Pirate.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/8 Singer Woman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/8 Singer Woman.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/9 Joe Biden.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/9 Joe Biden.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/CameraController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Contestant/Contestant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/Contestant/Contestant.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantAnimation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/EventManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/EventManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Jury/Vote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/Jury/Vote.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/UI/UILevelComplete.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/UI/UILevelComplete.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/UI/UITalentmeter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/UI/UITalentmeter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/UI/UITop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/UI/UITop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,16 +76,16 @@
       <option value="$PROJECT_DIR$/Assets/My Scripts/UI/UIVote.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/UI/UITalentmeter.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/UI/UIStart.cs" />
-      <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/Contestant.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantAnimation.cs" />
-      <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/SwipeDetector.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/EventManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/My Scripts/Jury/Vote.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/CameraController.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/UI/UITop.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/UI/UILevelComplete.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/Jury/Vote.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/Contestant.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantSpawner.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1o6WP08XJVvDRcgtwT41TQP4gHc" />
@@ -177,6 +150,9 @@
       <workItem from="1613978046780" duration="9337000" />
       <workItem from="1613996208535" duration="2543000" />
       <workItem from="1614003747153" duration="918000" />
+      <workItem from="1614068417552" duration="684000" />
+      <workItem from="1614070193714" duration="595000" />
+      <workItem from="1614168754473" duration="3230000" />
     </task>
     <servers />
   </component>
