@@ -1,24 +1,33 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.AI;
 public class Contestant : MonoBehaviour
 {
     private bool _initialDestinationSet;
     private NavMeshAgent _agent;
     private Vector3 _destination;
+    private AudioSource _source;
     [SerializeField] private float _talentAngle;
 
     public float TalentAngle => _talentAngle;
-    
+
+    private void Awake()
+    {
+        _source = GetComponent<AudioSource>();
+    }
+
     private void OnEnable()
     {
         _agent = GetComponent<NavMeshAgent>();
         _agent.enabled = true;
+        EventManager.OnPerformanceStart.AddListener(PlayMusic);
         EventManager.OnPerformanceEnd.AddListener(EndPerformance);
         EventManager.OnVotingEnd.AddListener(LeaveStage);
     }
 
     private void OnDisable()
     {
+        EventManager.OnPerformanceStart.RemoveListener(PlayMusic);
         EventManager.OnPerformanceEnd.RemoveListener(EndPerformance);
         EventManager.OnVotingEnd.RemoveListener(LeaveStage);
     }
@@ -54,6 +63,7 @@ public class Contestant : MonoBehaviour
 
     private void EndPerformance()
     {
+        StopMusic();
         _agent.isStopped = false;
         _destination = new Vector3(0, 2.75f, 25);
         _agent.SetDestination(_destination);
@@ -73,5 +83,22 @@ public class Contestant : MonoBehaviour
         _agent.isStopped = false;
         _destination = new Vector3(-20, 2.75f, 48);
         _agent.SetDestination(_destination);
+    }
+
+    private void PlayMusic()
+    {
+        if (gameObject.name == "4 Cyclist(Clone)" || gameObject.name == "12 Farmer(Clone)")
+        {
+            _source.PlayDelayed(3);
+        }
+        else
+        {
+            _source.PlayDelayed(0.5f);
+        }
+    }
+
+    private void StopMusic()
+    {
+        _source.Stop();
     }
 }

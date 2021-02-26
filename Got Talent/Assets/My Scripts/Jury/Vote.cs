@@ -1,16 +1,26 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class Vote : MonoBehaviour
 {
     private int _votingRound = 1;
     private bool _playerCanVote;
     private IContestantBeingVoted _beingVoted;
+    private AudioSource _audioSource;
+    [SerializeField] private AudioClip[] _clips;
     [SerializeField] private GameObject[] _arms;
     [SerializeField] private Image[] _voteImages;
     [SerializeField] private Sprite _yesSprite, _noSprite;
+
+    private void Awake()
+    {
+        _audioSource = GetComponent<AudioSource>();
+    }
+
     private void OnEnable()
     {
         EventManager.OnPerformanceEnd.AddListener(BeginVoting);
@@ -53,11 +63,13 @@ public class Vote : MonoBehaviour
         
         if (randomNum == -1)
         {
+            _audioSource.PlayOneShot(_clips[2]);
             animIndex = 0;
             _voteImages[juryIndex].sprite = _noSprite;
         }
         else
         {
+            _audioSource.PlayOneShot(_clips[juryIndex]);
             _voteImages[juryIndex].sprite = _yesSprite;
         }
         
@@ -142,6 +154,7 @@ public class Vote : MonoBehaviour
             
                 if (_fingerDownPosition.x - _fingerUpPosition.x > 0)
                 {
+                    _audioSource.PlayOneShot(_clips[1]);
                     _arms[0].SetActive(true);
                     _arms[0].transform.DOMoveY(3.556f, 0.3f);
                     _voteImages[2].sprite = _yesSprite;
@@ -150,6 +163,7 @@ public class Vote : MonoBehaviour
                 }
                 else
                 {
+                    _audioSource.PlayOneShot(_clips[2]);
                     _arms[1].SetActive(true);
                     _arms[1].transform.DOMoveY(3.556f, 0.3f);
                     _voteImages[2].sprite = _noSprite;
