@@ -4,23 +4,12 @@
     <list default="true" id="75986bfe-cc4d-4cb9-ab68-a8df6c4fc3fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/1 Break Dancer Man.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/1 Break Dancer Man.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/10 Baseball Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/10 Baseball Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/11 Doctor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/11 Doctor.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/12 Farmer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/12 Farmer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/13 Fireman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/13 Fireman.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/14 Soldier.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/14 Soldier.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/15 Wizard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/15 Wizard.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/2 Boxer Woman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/2 Boxer Woman.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/3 Clown.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/3 Clown.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/4 Cyclist.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/4 Cyclist.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/5 Ninja.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/5 Ninja.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/6 Donald Trump.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/6 Donald Trump.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/7 Pirate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/7 Pirate.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/8 Singer Woman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/8 Singer Woman.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/9 Joe Biden.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Prefabs/Contestants/9 Joe Biden.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Contestant/Contestant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/Contestant/Contestant.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Jury/Vote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/Jury/Vote.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LionStudios/Resources/LionStudios.LionSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LionStudios/Resources/LionStudios.LionSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MaxSdk/Resources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MaxSdk/Resources.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MaxSdk/Resources/AppLovinSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MaxSdk/Resources/AppLovinSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,12 +69,12 @@
       <option value="$PROJECT_DIR$/Assets/SwipeDetector.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/EventManager.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/CameraController.cs" />
-      <option value="$PROJECT_DIR$/Assets/My Scripts/UI/UITop.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/UI/UILevelComplete.cs" />
-      <option value="$PROJECT_DIR$/Assets/My Scripts/GameManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/My Scripts/Jury/Vote.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/Contestant.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/Jury/Vote.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/UI/UITop.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1o6WP08XJVvDRcgtwT41TQP4gHc" />
@@ -153,6 +142,7 @@
       <workItem from="1614068417552" duration="684000" />
       <workItem from="1614070193714" duration="595000" />
       <workItem from="1614168754473" duration="3230000" />
+      <workItem from="1614608887614" duration="3074000" />
     </task>
     <servers />
   </component>
