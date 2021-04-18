@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75986bfe-cc4d-4cb9-ab68-a8df6c4fc3fa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/contentModel.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/riderModule.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LionStudios/Resources/LionStudios.LionSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LionStudios/Resources/LionStudios.LionSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MaxSdk/Resources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MaxSdk/Resources.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MaxSdk/Resources/AppLovinSettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MaxSdk/Resources/AppLovinSettings.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantEndState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantEndState.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,18 +27,18 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/My Scripts/UI/UITop.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/EventManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.lionstudios.release.lionkit@1.3.1/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinSettings.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/Backstage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/Jury/Vote.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/My Scripts/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/UI/UIVote.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/EventManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/Jury/Vote.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/My Scripts/UI/UIStart.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/UI/UITalentmeter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/Contestant/IContestantBeingVoted.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.lionstudios.release.lionkit@1.3.1/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinSettings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantStartState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/UI/UITalentmeter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/Backstage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/Contestant/IContestantBeingVoted.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/UI/UIVote.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/My Scripts/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -59,7 +57,6 @@
       <option value="$PROJECT_DIR$/Assets/My Scripts/Jury/NPJuries.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/UI/Talentmeter.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/UI/LevelComplete.cs" />
-      <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantEndState.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/IContestantBeingVoted.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/Backstage.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/UI/UIVote.cs" />
@@ -75,6 +72,7 @@
       <option value="$PROJECT_DIR$/Assets/My Scripts/Jury/Vote.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/My Scripts/UI/UITop.cs" />
+      <option value="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantEndState.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1o6WP08XJVvDRcgtwT41TQP4gHc" />
@@ -96,6 +94,7 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -105,6 +104,7 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -143,6 +143,9 @@
       <workItem from="1614070193714" duration="595000" />
       <workItem from="1614168754473" duration="3230000" />
       <workItem from="1614608887614" duration="3074000" />
+      <workItem from="1615905489374" duration="699000" />
+      <workItem from="1618303835532" duration="76000" />
+      <workItem from="1618303938059" duration="56000" />
     </task>
     <servers />
   </component>
