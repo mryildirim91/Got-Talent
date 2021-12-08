@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 1
+  version: 4
 --- !u!21 &2100000
 Material:
   serializedVersion: 6
@@ -21,13 +21,14 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Audience 4
-  m_Shader: {fileID: 4800000, guid: bee44b4a58655ee4cbff107302a3e131, type: 3}
-  m_ShaderKeywords: _CELPRIMARYMODE_SINGLE _TEXTUREBLENDINGMODE_MULTIPLY _UNITYSHADOWMODE_NONE
+  m_Shader: {fileID: 4800000, guid: 650dd9526735d5b46b79224bc6e94025, type: 3}
+  m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 2000
+  stringTagMap:
+    RenderType: Opaque
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -65,7 +66,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: c06748f86ad3cff4ea1b7da0dfe12b85, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8927c586853b83b468b8e401f4a7488a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -123,6 +124,7 @@ Material:
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _RimEnabled: 0
+    - _SampleGI: 0
     - _SelfShadingSize: 0.5
     - _SelfShadingSizeExtra: 0.6
     - _ShadowEdgeSize: 0.05
@@ -143,7 +145,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0, g: 0, b: 0, a: 1}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ColorDim: {r: 0.5849056, g: 0.5849056, b: 0.5849056, a: 1}
     - _ColorDimCurve: {r: 0.85023, g: 0.85034, b: 0.85045, a: 0.85056}
@@ -156,3 +158,4 @@ Material:
     - _LightmapDirection: {r: 0, g: 1, b: 0, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _UnityShadowColor: {r: 0.85023, g: 0.85034, b: 0.85045, a: 0.85056}
+  m_BuildTextureStacks: []

@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-using LionStudios;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,7 +9,6 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        Analytics.Events.LevelStarted(PlayerPrefs.GetInt("CurrentEpisode") + 1);
     }
 
     private void OnEnable()
@@ -25,7 +23,6 @@ public class GameManager : MonoBehaviour
     
     private void LevelComplete()
     {
-        Analytics.Events.LevelComplete(PlayerPrefs.GetInt("CurrentEpisode") + 1);
         PlayerPrefs.SetInt("CurrentEpisode", PlayerPrefs.GetInt("CurrentEpisode") + 1);
     }
 

@@ -2,32 +2,7 @@
 <project version="4">
   <component name="UserContentModel">
     <attachedFolders />
-    <explicitIncludes>
-      <Path>Library/PackageCache/com.google.external-dependency-manager@1.2.160</Path>
-      <Path>Library/PackageCache/com.lionstudios.release.lionkit@1.3.1</Path>
-      <Path>Library/PackageCache/com.lionstudios.release.localization@1.0.23</Path>
-      <Path>Library/PackageCache/com.unity.cinemachine@2.6.3</Path>
-      <Path>Library/PackageCache/com.unity.collab-proxy@1.2.16</Path>
-      <Path>Library/PackageCache/com.unity.device-simulator@2.2.4-preview</Path>
-      <Path>Library/PackageCache/com.unity.ext.nunit@1.0.5</Path>
-      <Path>Library/PackageCache/com.unity.ide.rider@1.1.4</Path>
-      <Path>Library/PackageCache/com.unity.ide.vscode@1.2.3</Path>
-      <Path>Library/PackageCache/com.unity.render-pipelines.core@7.3.1</Path>
-      <Path>Library/PackageCache/com.unity.render-pipelines.universal@7.3.1</Path>
-      <Path>Library/PackageCache/com.unity.shadergraph@7.3.1</Path>
-      <Path>Library/PackageCache/com.unity.test-framework@1.1.19</Path>
-      <Path>Library/PackageCache/com.unity.textmeshpro@2.1.1</Path>
-      <Path>Library/PackageCache/com.unity.timeline@1.2.17</Path>
-      <Path>Packages</Path>
-      <Path>ProjectSettings</Path>
-    </explicitIncludes>
-    <explicitExcludes>
-      <Path>.idea</Path>
-      <Path>Build</Path>
-      <Path>Library</Path>
-      <Path>Logs</Path>
-      <Path>Temp</Path>
-      <Path>obj</Path>
-    </explicitExcludes>
+    <explicitIncludes />
+    <explicitExcludes />
   </component>
 </project>
