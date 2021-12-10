@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-public interface IContestantBeingVoted
+﻿public interface IContestantBeingVoted
 {
     void VoteAnimation(int num);
 }

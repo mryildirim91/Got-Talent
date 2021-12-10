@@ -9,6 +9,9 @@ public class Vote : MonoBehaviour
 {
     private int _votingRound = 1;
     private bool _playerCanVote;
+    private Vector2 _fingerDownPosition;
+    private Vector2 _fingerUpPosition;
+    private const float MINDistanceForSwipe = 100;
     private IContestantBeingVoted _beingVoted;
     private AudioSource _audioSource;
     [SerializeField] private AudioClip[] _clips;
@@ -37,8 +40,8 @@ public class Vote : MonoBehaviour
     
     private IEnumerator VotingRoutine()
     {
-        int juryIndex = 0;
-        int randomNum = Random.Range(-1, 2);
+        var juryIndex = 0;
+        var randomNum = Random.Range(-1, 2);
         
         if (randomNum == 0)
         {
@@ -57,7 +60,7 @@ public class Vote : MonoBehaviour
 
     private void JuryVote(int randomNum, int juryIndex)
     {
-        int animIndex = 1;
+        var animIndex = 1;
 
         _voteImages[juryIndex].gameObject.SetActive(true);
         
@@ -78,20 +81,20 @@ public class Vote : MonoBehaviour
     }
     private void EndVote()
     {
-        for (int i = 0; i < _voteImages.Length; i++)
+        foreach (var image in _voteImages)
         {
-            _voteImages[i].gameObject.SetActive(false);
+            image.gameObject.SetActive(false);
         }
 
-        for (int i = 0; i < _arms.Length; i++)
+        foreach (var arm in _arms)
         {
-            if (_arms[i].activeSelf)
+            if (arm.activeSelf)
             {
-                var pos = _arms[i].transform.position;
+                var pos = arm.transform.position;
                 pos.y = 4f;
-                _arms[i].transform.position = pos;
+                arm.transform.position = pos;
                 
-                _arms[i].SetActive(false);
+                arm.SetActive(false);
             }
         }
         
@@ -105,12 +108,7 @@ public class Vote : MonoBehaviour
         _votingRound++;
     }
     
-    private Vector2 _fingerDownPosition;
-    private Vector2 _fingerUpPosition;
-    
-    private bool _detectSwipeOnlyAfterRelease;
-    
-    private float _minDistanceForSwipe = 100;
+
     
     private void Update()
     {
@@ -130,7 +128,7 @@ public class Vote : MonoBehaviour
                 _fingerDownPosition = touch.position;
             }
 
-            if (!_detectSwipeOnlyAfterRelease && touch.phase == TouchPhase.Moved)
+            if (touch.phase == TouchPhase.Moved)
             {
                 _fingerDownPosition = touch.position;
                 DetectSwipe();
@@ -146,34 +144,33 @@ public class Vote : MonoBehaviour
 
     private void DetectSwipe()
     {
-        if (_playerCanVote)
+        if (!_playerCanVote) return;
+        
+        if (Mathf.Abs(_fingerDownPosition.x - _fingerUpPosition.x) > MINDistanceForSwipe)
         {
-            if (Mathf.Abs(_fingerDownPosition.x - _fingerUpPosition.x) > _minDistanceForSwipe)
-            {
-                _voteImages[2].gameObject.SetActive(true);
+            _voteImages[2].gameObject.SetActive(true);
             
-                if (_fingerDownPosition.x - _fingerUpPosition.x > 0)
-                {
-                    _audioSource.PlayOneShot(_clips[1]);
-                    _arms[0].SetActive(true);
-                    _arms[0].transform.DOMoveY(3.556f, 0.3f);
-                    _voteImages[2].sprite = _yesSprite;
-                    _beingVoted.VoteAnimation(1);
-                    UITop.Instance.GiveStars();
-                }
-                else
-                {
-                    _audioSource.PlayOneShot(_clips[2]);
-                    _arms[1].SetActive(true);
-                    _arms[1].transform.DOMoveY(3.556f, 0.3f);
-                    _voteImages[2].sprite = _noSprite;
-                    _beingVoted.VoteAnimation(0);
-                }
+            if (_fingerDownPosition.x - _fingerUpPosition.x > 0)
+            {
+                _audioSource.PlayOneShot(_clips[1]);
+                _arms[0].SetActive(true);
+                _arms[0].transform.DOMoveY(3.556f, 0.3f);
+                _voteImages[2].sprite = _yesSprite;
+                _beingVoted.VoteAnimation(1);
+                UITop.Instance.GiveStars();
+            }
+            else
+            {
+                _audioSource.PlayOneShot(_clips[2]);
+                _arms[1].SetActive(true);
+                _arms[1].transform.DOMoveY(3.556f, 0.3f);
+                _voteImages[2].sprite = _noSprite;
+                _beingVoted.VoteAnimation(0);
+            }
 
-                _playerCanVote = false;
-                Invoke(nameof(EndVote),2);
-                _fingerUpPosition = _fingerDownPosition;
-            } 
+            _playerCanVote = false;
+            Invoke(nameof(EndVote),2);
+            _fingerUpPosition = _fingerDownPosition;
         }
     }
 }
