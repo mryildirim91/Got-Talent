@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class ContestantSpawner : MonoBehaviour
 {
-    private GameObject _clone;
+    private GameObject _contestantClone;
     [SerializeField] private Transform _spawnPos;
     [SerializeField] private GameObject[] _contestants;
     [SerializeField] private Text[] _nameText, _talentText;
@@ -30,26 +30,26 @@ public class ContestantSpawner : MonoBehaviour
         {
             PlayerPrefs.DeleteKey("ContestantIndex");
         }
-        _clone = Instantiate(_contestants[PlayerPrefs.GetInt("ContestantIndex")]);
-        _clone.transform.position = _spawnPos.position;
+        _contestantClone = Instantiate(_contestants[PlayerPrefs.GetInt("ContestantIndex")]);
+        _contestantClone.transform.position = _spawnPos.position;
         
         if (!GameManager.Instance.IsGameStarted)
         {
-            ContestantAnimation[] _contestant = new ContestantAnimation[_nameText.Length];
+            var contestant = new ContestantAnimation[_nameText.Length];
             
-            for (int i = 0; i < _contestant.Length; i++)
+            for (int i = 0; i < contestant.Length; i++)
             {
                 if (PlayerPrefs.GetInt("ContestantIndex") + i > _contestants.Length - 1)
                 {
-                    _contestant[i] = _contestants[0 + i].GetComponent<ContestantAnimation>();
+                    contestant[i] = _contestants[0 + i].GetComponent<ContestantAnimation>();
                 }
                 else
                 {
-                    _contestant[i] = _contestants[PlayerPrefs.GetInt("ContestantIndex") + i].GetComponent<ContestantAnimation>(); 
+                    contestant[i] = _contestants[PlayerPrefs.GetInt("ContestantIndex") + i].GetComponent<ContestantAnimation>(); 
                 }
-                _nameText[i].text = _contestant[i]._contestantInfo.Name;
-                _talentText[i].text = _contestant[i]._contestantInfo.Talent;
-                _contestantPicture[i].sprite = _contestant[i]._contestantInfo.Picture;
+                _nameText[i].text = contestant[i].Info.Name;
+                _talentText[i].text = contestant[i].Info.Talent;
+                _contestantPicture[i].sprite = contestant[i].Info.Picture;
             }
         }
         PlayerPrefs.SetInt("ContestantIndex",PlayerPrefs.GetInt("ContestantIndex") + 1);

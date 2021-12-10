@@ -16,8 +16,8 @@ public class CameraController : MonoBehaviour
         EventManager.OnPerformanceStart.RemoveListener(SwitchToPerformanceCam);
         EventManager.OnVotingEnd.RemoveListener(SwitchToIntermittentCam);
     }
-    
-    public void SwitchToPerformanceCam()
+
+    private void SwitchToPerformanceCam()
     {
         LookAtContestant();
         _cinemachineVcam[0].Priority = 0;
@@ -35,16 +35,16 @@ public class CameraController : MonoBehaviour
     }
     private void StopLookingAtContestant()
     {
-        for (int i = 0; i < _cinemachineVcam.Length; i++)
+        foreach (var virtualCamera in _cinemachineVcam)
         {
-            if(_cinemachineVcam[i] != null)
-                _cinemachineVcam[i].LookAt = null;
+            if(virtualCamera != null)
+                virtualCamera.LookAt = null;
         }
     }
 
     private void LookAtContestant()
     {
-        Contestant contestant = FindObjectOfType<Contestant>();
+        var contestant = FindObjectOfType<Contestant>();
         _cinemachineVcam[2].LookAt = contestant.transform;
     }
 }

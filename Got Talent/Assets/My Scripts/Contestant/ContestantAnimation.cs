@@ -6,8 +6,13 @@ public class ContestantAnimation : MonoBehaviour, IContestantBeingVoted
 {
     private Animator _animator;
 
-    public ContestantInfo _contestantInfo;
-    
+    private ContestantInfo _contestantInfo;
+    public ContestantInfo Info => _contestantInfo;
+    private static readonly int Idle = Animator.StringToHash("Idle");
+    private static readonly int Walk = Animator.StringToHash("Walk");
+    private static readonly int Yes = Animator.StringToHash("Got Yes");
+    private static readonly int No = Animator.StringToHash("Got No");
+
     [Serializable]
     public struct ContestantInfo
     {
@@ -40,11 +45,11 @@ public class ContestantAnimation : MonoBehaviour, IContestantBeingVoted
     }
     private void IdleAnimation()
     {
-        _animator.SetTrigger("Idle");
+        _animator.SetTrigger(Idle);
     }
     private void WalkAnimation()
     {
-        _animator.SetTrigger("Walk");
+        _animator.SetTrigger(Walk);
     }
     private void PerformanceAnimation()
     {
@@ -54,17 +59,15 @@ public class ContestantAnimation : MonoBehaviour, IContestantBeingVoted
     {
         yield return BetterWaitForSeconds.Wait(0.25f);
         
-        if (num == 1)
+        switch (num)
         {
-            _animator.SetTrigger("Got Yes");
+            case 1:
+                _animator.SetTrigger(Yes);
+                break;
+            case 0:
+                _animator.SetTrigger(No);
+                break;
         }
-
-        if (num == 0)
-        {
-            _animator.SetTrigger("Got No");
-        }
-        
-        StopCoroutine(VoteAnimationDelay(num));
     }
     public void VoteAnimation(int num)
     {
