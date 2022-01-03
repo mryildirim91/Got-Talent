@@ -25,7 +25,7 @@ public class UILevelComplete : MonoBehaviour
     private void DelayPanel()
     {
         _levelCompletePanel.SetActive(true);
-        RectTransform rectTransform = _levelCompletePanel.transform.GetChild(0).GetComponent<RectTransform>();
+        var rectTransform = _levelCompletePanel.transform.GetChild(0).GetComponent<RectTransform>();
         rectTransform.DOAnchorPos(new Vector2(0, -1250), 0.5f);
         StartCoroutine(LevelEndStarAnimation());
     }

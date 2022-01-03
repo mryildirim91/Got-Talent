@@ -120,7 +120,7 @@ public class Vote : MonoBehaviour
 
     private void PlayerVote()
     {
-        foreach (Touch touch in Input.touches)
+        foreach (var touch in Input.touches)
         {
             if (touch.phase == TouchPhase.Began)
             {

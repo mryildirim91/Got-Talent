@@ -3,14 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="75986bfe-cc4d-4cb9-ab68-a8df6c4fc3fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Got Talent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantAnimation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantEndState.cs.PVS-Studio.perflog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantEndState.cs.PVS-Studio.perflog.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/Contestant/ContestantSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Contestant/IContestantBeingVoted.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/Contestant/IContestantBeingVoted.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animator/Contestant.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/Contestant.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/My Scripts/Jury/Vote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/Jury/Vote.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/UI/UITop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/UI/UITop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/My Scripts/UI/UILevelComplete.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/My Scripts/UI/UILevelComplete.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,6 +147,8 @@
       <workItem from="1618303938059" duration="56000" />
       <workItem from="1638969403846" duration="2787000" />
       <workItem from="1639125772486" duration="3746000" />
+      <workItem from="1639747251476" duration="1497000" />
+      <workItem from="1640012512311" duration="1261000" />
     </task>
     <servers />
   </component>
