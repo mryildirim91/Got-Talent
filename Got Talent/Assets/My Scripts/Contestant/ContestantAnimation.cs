@@ -6,7 +6,7 @@ public class ContestantAnimation : MonoBehaviour, IContestantBeingVoted
 {
     private Animator _animator;
 
-    private ContestantInfo _contestantInfo;
+    [SerializeField]private ContestantInfo _contestantInfo;
     public ContestantInfo Info => _contestantInfo;
     private static readonly int Idle = Animator.StringToHash("Idle");
     private static readonly int Walk = Animator.StringToHash("Walk");
